@@ -1,0 +1,124 @@
+@import './reset.css';
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 50px;
+}
+.header{
+	width: 100%;
+	display: flex;
+	padding:40px 15px 50px ;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(92.7deg, #4CB8C4 0%, #3CD3AD 100%), #232323;
+}
+.title{
+	font-family: "Rubik";
+	font-weight: 700;
+	font-size: 44px;
+	line-height:1.18;
+	color: #ffffff;
+}
+.form{
+	display: flex;
+	justify-content: space-between;
+	width: 460px;
+	height: 54px;
+	background-color:#ffffff;
+	border-radius: 6px;
+}
+.input{
+	font-family: "Rubik";
+	padding: 15px;
+	font-weight: 300;
+	font-size: 20px;
+	color:#000000;
+	display: flex;
+	flex-grow: 1;
+}
+.btn{
+	font-family: "Rubik";
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1;
+	color:white;
+	background-color:#e5464f;
+	width: 145px;
+height: 54px;
+border-radius: 6px;
+transition: background-color 0.2s ease-in;
+}
+.btn:hover{
+	background:#f5313b;
+	
+}
+.card{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	padding: 30px;
+	background-color:#fff;
+	border-radius:6px;
+	box-shadow:0px 5px 20px rgba(27,108,114,0.25);
+	min-width:360px;
+}
+.card::before{
+	position: absolute;
+	z-index: -1;
+	left: 10px;
+	bottom: -10px;
+	content:"";
+	display: block;
+	width: 340px;
+	height: 100%;
+	background-color:#ffffff;
+	box-shadow:0px 5px 20px rgba(27,108,114,0.25);
+	border-radius: 6px;
+}
+.card-city{
+	position: relative;
+	font-family: "Rubik";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 33px;
+	color:#000000
+}
+.card-city span{
+	display: inline-block;
+	padding: 3px 5px;
+	color:#fff;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1;
+	vertical-align: text-top;
+	background-color:#e5464f;
+	border-radius:6px;
+}
+
+.card-weather{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.card-value{
+	color:#000000;
+	font-family: "Rubik";
+	font-size:92px;
+	line-height: 1;
+}
+.card-value sup{
+	font-family: "Rubik";
+	font-size: 50%;
+}
+.card-description{
+	font-size: 20px;
+	font-weight: 1.2;
+}
+.card-img{
+	width: 100px;
+	height: 100px;
+}
